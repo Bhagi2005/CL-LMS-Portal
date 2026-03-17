@@ -17,10 +17,10 @@ def get_db():
 
 @app.route("/")
 def home():
-    return render_template("login.html")
+    return render_template("index.html")
 
 
-@app.route("/login", methods=["POST"])
+@app.route("/index", methods=["POST"])
 def login():
     username = request.form["username"]
     password = request.form["password"]
