@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Materials</title>
+</head>
+
+<body>
+
+<h2>{{course}} Materials</h2>
+
+{% for m in materials %}
+
+<p>{{m.filename}}</p>
+
+<a href="/download/{{m.id}}">Download</a>
+
+<br><br>
+
+{% endfor %}
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+</head>
+
+<body>
+
+<h2>Upload Course Material</h2>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+
+<label>Select Course</label><br>
+
+<select name="course">
+<option>Python</option>
+<option>Data Science</option>
+<option>Web Development</option>
+<option>Machine Learning</option>
+</select>
+
+<br><br>
+
+<input type="file" name="file"><br><br>
+
+<button type="submit">Upload</button>
+
+</form>
+
+</body>
+</html>
